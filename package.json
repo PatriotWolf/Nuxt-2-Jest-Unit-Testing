@@ -1,0 +1,44 @@
+{
+  "name": "testing-jest",
+  "version": "1.0.0",
+  "description": "Testing using jest",
+  "author": "Mr.Worldwide",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lintfix": "npm run lint -- --fix",
+    "test": "jest",
+    "precommit": "npm run lint"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.0.0",
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "bootstrap": "^4.1.3",
+    "bootstrap-vue": "^2.0.0-beta",
+    "cross-env": "^5.2.0",
+    "jest": "^23.6.0",
+    "nuxt": "^2.0.0",
+    "vue-jest": "^3.0.0"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      "^.+\\.vue$": "vue-jest"
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^5.0.1",
+    "eslint-loader": "^2.0.0",
+    "eslint-plugin-vue": "^4.0.0",
+    "node-sass": "^4.9.4",
+    "nodemon": "^1.11.0",
+    "sass-loader": "^7.1.0"
+  }
+}
